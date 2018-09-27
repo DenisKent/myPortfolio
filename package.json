@@ -1,0 +1,22 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "Denis's portfolio page",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenisKent/myPortfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DenisKent/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/DenisKent/myPortfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
