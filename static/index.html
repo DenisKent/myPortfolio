@@ -16,32 +16,33 @@
 
     <a target="_blank" id="linkedIn" href="https://www.linkedin.com/in/denis-kent-653743a9"><img class = "header-img" src="images/Linkedin-Logo-White-101px-R.png" alt="Link to Linkedin" title="LinkedIn"></a>
   </header>
-  <section id="about-content">
-    <h2>ABOUT</h2>
-    <p>My name is Denis Kent. I have an academic background in Molecular Biochemistry and professional experience in consulting. Most recently I worked as a data analyst and strategy consultant advising on small-medium sized company acquisitions. While working I became  interested in coding, largely due to my enjoyment of solving logical problems.</p>
 
-    <p>Having learnt Python and Visual Basic while working on projects in my spare evenings I decided to take part in a selective coding bootcamp, Founders and Coders. The bootcamp enabled me to work on my programming skills full-time while also providing a rounded skill set in preparation for entering the industry.</p>
-
-  </section>
-
-  <h2>PORTFOLIO</h2>
-  <section>
-    <div class="portfolio-large">
+  <section id="portfolio-section">
+    <h2>PORTFOLIO</h2>
+    <div class="portfolio-large portfolio-large-left">
+      <h3><span>WeCook</span><a target="_blank" href="https://github.com/FACN4/StudentProject-WeCook"><img class = "git-project-link" src="images/GitHub-Mark-120px-plus.png" alt="Link to github" title="GitHub project"></a></h3>
+      <img class="portfolio-image-large" src="../images/weCook.png" alt="WeCook website image" title="WeCook">
+      <div>
+        <h4 style="color: #4169E1;">GOAL</h4>
+        <p>A platform which enables home cooks to sell extra dinner portions to people in their local area. The app needed to enable users to browse, book and pay for meals from local cooks.</p>
+        <h4 style="color: #20B2AA;">SOLUTION</h4>
+        <p>Developed a React-Express web-app which can search meals by date and distance and allows users to create an account, read cook reviews and book meals.</p>
+        <h4 style="color: #6A5ACD;">WHAT'S NEXT?</h4>
+        <p>The platform is currently incomplete. The customer user journey MVP is complete, however a seperate portal for cooks is required.</p>
+      </div>
+    </div>
+    <div class="portfolio-large portfolio-large-right">
       <h3><span>Cryptocurrency Lending Bot</span><a target="_blank" href="https://github.com/DenisKent/CryptoCurrencyLendingBot"><img class = "git-project-link" src="images/GitHub-Mark-120px-plus.png" alt="Link to github" title="GitHub project"></a></h3>
       <img class="portfolio-image-large" src="images/BTC-trading.jpg" alt="Bitcoin trading image" title="Bitcoin Lending">
       <div>
         <h4 style="color: #4169E1;">GOAL</h4>
-        <p>I had interest in cryptocurrencies and wanted to build a trading bot to make use of the nascent peer-to-peer cryptocurrency lending market.
-          The bot had to autonomously lend cryptocurrency at optimal interest rates, using small amounts of currency - this was my first time trading.</p>
+        <p>I had an interest in cryptocurrencies and wanted to build a trading bot to make use of the nascent peer-to-peer cryptocurrency lending market.
+          The bot needed to autonomously lend cryptocurrency at optimal interest rates, using volumes amounts of currency. Loans given typically</p>
         <h4 style="color: #20B2AA;">SOLUTION</h4>
-        <p>Developed a Python application which ran 24/7 on Amazon's AWS EC2 & RDS to track and store interest rates,
-          calculate optimal time and price at which to provide loans and execute loans without my interaction.
-          The most difficult challenges were in developing the mathematical logic for deciding time & price to execute
+        <p>Developed a Python application which ran on Amazon's AWS EC2 & RDS to track and store interest rates, calculate optimal time and price at which to provide loans and execute loans without my interaction. The most difficult challenges were in developing the mathematical logic for deciding time & price to execute
           and ensuring loan interest rates remained optimal in the event of API connection failures.</p>
         <h4 style="color: #6A5ACD;">WHAT'S NEXT?</h4>
-        <p>System worked well, achieved >20% interest on an annual basis (bitcoin interest rates tend to be high). Given more time and experience I would like
-          to strengthen the system e.g. use neural networks to calculate ideal trading parameters or develop the capability to trade currency rather than
-           lend in specific scenarios.</p>
+        <p>The bot worked well, achieved >20% interest on an annual basis (bitcoin interest rates tend to be high). Given more time and experience I would like to refactor the code, expand testing coverage and improve the interest rate achieved e.g. by using neural networks to calculate ideal trading parameters.</p>
       </div>
     </div>
     <div class = "portfolio-small">
@@ -52,13 +53,12 @@
           <p>I became interested in card counting and finding the best counting methods possible.
           I wanted to test several theories in practice to understand how they would impact a payer's edge over the dealer.</p>
           <h4 style="color: #20B2AA;">SOLUTION</h4>
-          <p>Developed a blackjack simulator which would play out thousands of games under different game conditions,
+          <p>Developed a blackjack simulator in python which would play out thousands of games under different game conditions,
             using different card counting strategies.
             Confirmed several theories about scenarios which will give you a better edge when counting.</p>
           <h4 style="color: #6A5ACD;">WHAT'S NEXT?</h4>
-          <p>Given more time I would like to build the ultimate card counting programme which would be
-            able to know the exact probability of winning or losing the next hand based on the exact card left in the deck.
-          Connecting this to an image recognition system would be handy too!</p>
+          <p>Given more time I would like to build an ultimate card counting programme which would be
+            able to know the exact probability of winning or losing the next hand based on the exact card left in the deck.</p>
         </div>
         <div>
           <img src="images/blackJack.jpg" alt="Blackjack image" title="Blackjack">

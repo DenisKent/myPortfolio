@@ -33,7 +33,10 @@ h1{
   margin-top:5px;
 }
 
-/*ABOUT*/
+/*PORTFOLIO*/
+#portfolio-section{
+  padding-top:60px;
+}
 
 h2{
   text-align: center;
@@ -42,31 +45,18 @@ h2{
   margin:0;
   padding:40px 0px 30px 0px;
 }
-#about-content{
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 650px;
-  padding: 60px 8% 20px 8%;
-  margin: auto;
-}
-#about-content p{
-  text-align: center;
-  margin-bottom: 5px;
-}
 
-/*PORTFOLIO*/
 .portfolio-large{
   display: grid;
   grid-template-columns: 1fr;
   margin: 50px 2% 0px 2%;
-  background: linear-gradient(150deg, #f0f0f0 , #f0f0f0);
+  background-color: #f0f0f0;
   text-align: left;
   padding: 3%;
   align-items: center;
 }
-.portfolio-large img{
+.portfolio-image-large{
   max-width: 95%;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -76,7 +66,8 @@ h2{
   letter-spacing: 2px;
   padding-bottom: 3%;
   display:flex;
-  /* PUT IN SOME FLEXBOX FOR THE Title and GITHUB LOGO */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .portfolio-large h4{
@@ -158,8 +149,6 @@ h2{
 .git-project-link{
     height: 35px;
     width: 35px;
-    /* float: right;
-    margin-top: -10px; */
 }
 @media only screen and (min-width: 700px) {
   /*HEADER*/
@@ -181,7 +170,7 @@ h2{
     grid-column-start: 2;
   }
   /*ABOUT*/
-  #about-content{
+  #portfolio-section{
     padding-top: 100px;
   }
 }
@@ -192,10 +181,18 @@ h2{
     font-size: 38px;
     letter-spacing: 18px;
   }
-  .portfolio-large{
+  .portfolio-large-left{
+    grid-template-columns: 2fr 3fr;
+  }
+  .portfolio-large-left img{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end:3;
+  }
+  .portfolio-large-right{
     grid-template-columns: 3fr 2fr;
   }
-  .portfolio-large img{
+  .portfolio-large-right img{
     grid-row-start: 1;
     grid-row-end:3;
   }
