@@ -57,6 +57,7 @@ h2{
 }
 .portfolio-image-large{
   max-width: 95%;
+  padding:0.5px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -75,49 +76,14 @@ h2{
   letter-spacing: 2px;
 }
 
-.portfolio-small{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 2%;
-  margin-left: 2%;
-  grid-gap: 40px 40px;
+.other-projects li{
+  padding: 10px 0px;
 }
 
-.portfolio-small-sub img{
-  /*display: block;*/
-  height: auto;
-  max-width: 100%;
-}
-.portfolio-small-sub div ul li{
-  margin-bottom: 12px;
-  color: #4169E1;
-}
-.portfolio-small-sub div ul li span{
-  color: black;
-}
-/* .portfolio-large, .portfolio-small div{
-  background: linear-gradient(150deg, #f0f0f0 , #f0f0f0);
-  text-align: left;
-  padding: 3% 3% 3% 3%;
-  align-items: center;
-} */
-/* .portfolio-large h3, .portfolio-small h3{
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 20px;
-  letter-spacing: 2px;
-  padding-bottom: 3%;
-}
-.portfolio-large h4, .portfolio-small h4{
-  font-family: 'Libre Franklin', sans-serif;
-  font-size: 15px;
-  letter-spacing: 2px;
-} */
 .contact-info{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  background: linear-gradient(150deg, #434343 , #000000);
+  background: linear-gradient(150deg, #0e2861 , #09338B);
   align-items: center;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 16px;
@@ -145,11 +111,18 @@ h2{
     position: relative;
     top: 2px;
     left: 2px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 .git-project-link{
     height: 35px;
     width: 35px;
 }
+
+footer{
+  margin-top: 50px;
+}
+
 @media only screen and (min-width: 700px) {
   /*HEADER*/
   header {
