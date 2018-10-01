@@ -19,6 +19,7 @@
   "homepage": "https://github.com/DenisKent/myPortfolio#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "serve-favicon": "^2.5.0"
   }
 }
